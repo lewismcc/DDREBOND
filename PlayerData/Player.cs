@@ -22,7 +22,7 @@ namespace PlayerData
         public int Level { get => this.level; set => this.level = value; }
         private int hitPoints;
         public int HitPoints { get => this.hitPoints; set => this.hitPoints = value; }
-        //order of stats: strength, dexterity, constitution, inteligence, wisdom, initiative, proficiency, charisma
+        //order of stats: strength, dexterity, constitution, inteligence, wisdom, //initiative, //proficiency, charisma
         private int[] stats;
         public int[] Stats { get => this.stats; set => this.stats = value; }
         //standardArray holds these values 8,10,12,13,14,15. Values assigned to stats
