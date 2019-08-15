@@ -1,0 +1,8 @@
+﻿character,hit_Die,primaryAbility,saves,imagePath 
+barbarian,d12,Strength,Strength Constitution,imagePath,
+fighter,d10,Strenght|Dexterity,Strength Constitution,imagePath
+paladin,d10,Strength&Charisma,Wisdom Charisma,imagePath
+wizard,d6,Intelligence,Intelligence Wisdom,imagePath
+warlock,d8,Charisma,Wisdom Charisma,imagePath
+// end of file
+
