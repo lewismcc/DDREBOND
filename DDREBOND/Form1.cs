@@ -16,5 +16,35 @@ namespace DDREBOND
         {
             InitializeComponent();
         }
+
+        private void OnClickNext(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnClickPhoto1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnClickPhoto2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnClickPhoto3(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnClickPhoto4(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnClickPhoto5(object sender, EventArgs e)
+        {
+
+        }
     }
 }
