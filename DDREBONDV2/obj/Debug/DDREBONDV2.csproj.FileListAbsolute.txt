@@ -1,0 +1,11 @@
+C:\Users\Administrator1\source\repos\DDREBONDV2\DDREBONDV2\obj\Debug\DDREBONDV2.csprojAssemblyReference.cache
+C:\Users\Administrator1\source\repos\DDREBONDV2\DDREBONDV2\obj\Debug\DDREBOND.HomePage.resources
+C:\Users\Administrator1\source\repos\DDREBONDV2\DDREBONDV2\obj\Debug\DDREBONDV2.Properties.Resources.resources
+C:\Users\Administrator1\source\repos\DDREBONDV2\DDREBONDV2\obj\Debug\DDREBONDV2.csproj.GenerateResource.cache
+C:\Users\Administrator1\source\repos\DDREBONDV2\DDREBONDV2\obj\Debug\DDREBONDV2.csproj.CoreCompileInputs.cache
+C:\Users\Administrator1\source\repos\DDREBONDV2\DDREBONDV2\bin\Debug\DDREBONDV2.exe.config
+C:\Users\Administrator1\source\repos\DDREBONDV2\DDREBONDV2\bin\Debug\DDREBONDV2.exe
+C:\Users\Administrator1\source\repos\DDREBONDV2\DDREBONDV2\bin\Debug\DDREBONDV2.pdb
+C:\Users\Administrator1\source\repos\DDREBONDV2\DDREBONDV2\obj\Debug\DDREBONDV2.exe
+C:\Users\Administrator1\source\repos\DDREBONDV2\DDREBONDV2\obj\Debug\DDREBONDV2.pdb
+C:\Users\Administrator1\source\repos\DDREBONDV2\DDREBONDV2\obj\Debug\DDREBOND.StatsForm.resources
