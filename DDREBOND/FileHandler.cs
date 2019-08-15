@@ -1,3 +1,4 @@
+using System.Security;
 using System;
 using System.IO;
 
@@ -42,6 +43,17 @@ namespace ClassPractice
 
             }
 
+        }
+
+
+        // quick formatter for for player stats
+        public static string format(Player player){
+
+            string result = "";
+
+            result += player.name + "\n";
+
+            return "";
         }
 
     }
