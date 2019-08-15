@@ -30,7 +30,7 @@ namespace ClassPractice
             }
             catch (ArgumentException ae) {
 
-                // TODO: What would be the best way to handle it?
+                // TODO: What would be the best way to handle it?   
                 // This exception is handling the creation of file path
                 Console.WriteLine(ae.Message);
 
@@ -47,7 +47,7 @@ namespace ClassPractice
         }
 
 
-        // quick formatter for for player stats
+        // quick formatter for player stats
         public static string format(Player player){
 
             string result = "";
@@ -56,7 +56,7 @@ namespace ClassPractice
                 "Level: " + player.Level + "\n" + "HP: " + player.HitPoints + "\n" +
                 "Strength: " + player.Stats[0] + "\n" + "Dexterity: " + player.Stats[1] + "\n" + "Constitution: " + player.Stats[2] + "\n" +
                 "Intelligence: " + player.Stats[3] + "\n" + "Wisdom: " + player.Stats[4] + "\n" + "Initiative: " + player.Stats[5] + "\n" + 
-                "Proficiency: " + player.Stats[6] + "\n" + "Charisma: " + player.Stats[7];
+                "Proficiency: " + player.Stats[6] + "\n" + "Charisma: " + player.Stats[7] + "\n" + "\n";
 
             return result;
         }
