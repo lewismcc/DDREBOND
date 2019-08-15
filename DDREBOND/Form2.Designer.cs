@@ -36,11 +36,8 @@
             this.lblHealthpoints = new System.Windows.Forms.Label();
             this.txtHealthPoints = new System.Windows.Forms.TextBox();
             this.lblLevel = new System.Windows.Forms.Label();
-            this.txtLevel = new System.Windows.Forms.TextBox();
             this.txtStrenght = new System.Windows.Forms.TextBox();
             this.lblStrenght = new System.Windows.Forms.Label();
-            this.txtAgility = new System.Windows.Forms.TextBox();
-            this.lblAgility = new System.Windows.Forms.Label();
             this.txtIntel = new System.Windows.Forms.TextBox();
             this.lblIntel = new System.Windows.Forms.Label();
             this.txtXP = new System.Windows.Forms.TextBox();
@@ -64,6 +61,7 @@
             this.btnPrint = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,6 +83,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(219, 38);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
@@ -109,7 +108,7 @@
             // lblHealthpoints
             // 
             this.lblHealthpoints.AutoSize = true;
-            this.lblHealthpoints.Location = new System.Drawing.Point(442, 38);
+            this.lblHealthpoints.Location = new System.Drawing.Point(365, 41);
             this.lblHealthpoints.Name = "lblHealthpoints";
             this.lblHealthpoints.Size = new System.Drawing.Size(22, 13);
             this.lblHealthpoints.TabIndex = 5;
@@ -117,7 +116,7 @@
             // 
             // txtHealthPoints
             // 
-            this.txtHealthPoints.Location = new System.Drawing.Point(510, 35);
+            this.txtHealthPoints.Location = new System.Drawing.Point(406, 38);
             this.txtHealthPoints.Name = "txtHealthPoints";
             this.txtHealthPoints.Size = new System.Drawing.Size(100, 20);
             this.txtHealthPoints.TabIndex = 6;
@@ -125,23 +124,15 @@
             // lblLevel
             // 
             this.lblLevel.AutoSize = true;
-            this.lblLevel.Location = new System.Drawing.Point(357, 88);
+            this.lblLevel.Location = new System.Drawing.Point(556, 42);
             this.lblLevel.Name = "lblLevel";
             this.lblLevel.Size = new System.Drawing.Size(33, 13);
             this.lblLevel.TabIndex = 7;
             this.lblLevel.Text = "Level";
             // 
-            // txtLevel
-            // 
-            this.txtLevel.Location = new System.Drawing.Point(411, 88);
-            this.txtLevel.Name = "txtLevel";
-            this.txtLevel.Size = new System.Drawing.Size(42, 20);
-            this.txtLevel.TabIndex = 8;
-            this.txtLevel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TextBox3_MouseClick);
-            // 
             // txtStrenght
             // 
-            this.txtStrenght.Location = new System.Drawing.Point(680, 88);
+            this.txtStrenght.Location = new System.Drawing.Point(406, 99);
             this.txtStrenght.Name = "txtStrenght";
             this.txtStrenght.Size = new System.Drawing.Size(41, 20);
             this.txtStrenght.TabIndex = 16;
@@ -149,31 +140,15 @@
             // lblStrenght
             // 
             this.lblStrenght.AutoSize = true;
-            this.lblStrenght.Location = new System.Drawing.Point(626, 88);
+            this.lblStrenght.Location = new System.Drawing.Point(352, 99);
             this.lblStrenght.Name = "lblStrenght";
             this.lblStrenght.Size = new System.Drawing.Size(47, 13);
             this.lblStrenght.TabIndex = 15;
             this.lblStrenght.Text = "Strenght";
             // 
-            // txtAgility
-            // 
-            this.txtAgility.Location = new System.Drawing.Point(680, 135);
-            this.txtAgility.Name = "txtAgility";
-            this.txtAgility.Size = new System.Drawing.Size(41, 20);
-            this.txtAgility.TabIndex = 22;
-            // 
-            // lblAgility
-            // 
-            this.lblAgility.AutoSize = true;
-            this.lblAgility.Location = new System.Drawing.Point(626, 135);
-            this.lblAgility.Name = "lblAgility";
-            this.lblAgility.Size = new System.Drawing.Size(34, 13);
-            this.lblAgility.TabIndex = 21;
-            this.lblAgility.Text = "Agility";
-            // 
             // txtIntel
             // 
-            this.txtIntel.Location = new System.Drawing.Point(540, 135);
+            this.txtIntel.Location = new System.Drawing.Point(406, 143);
             this.txtIntel.Name = "txtIntel";
             this.txtIntel.Size = new System.Drawing.Size(39, 20);
             this.txtIntel.TabIndex = 20;
@@ -181,7 +156,7 @@
             // lblIntel
             // 
             this.lblIntel.AutoSize = true;
-            this.lblIntel.Location = new System.Drawing.Point(486, 135);
+            this.lblIntel.Location = new System.Drawing.Point(352, 143);
             this.lblIntel.Name = "lblIntel";
             this.lblIntel.Size = new System.Drawing.Size(27, 13);
             this.lblIntel.TabIndex = 19;
@@ -189,7 +164,7 @@
             // 
             // txtXP
             // 
-            this.txtXP.Location = new System.Drawing.Point(411, 135);
+            this.txtXP.Location = new System.Drawing.Point(696, 38);
             this.txtXP.Name = "txtXP";
             this.txtXP.Size = new System.Drawing.Size(42, 20);
             this.txtXP.TabIndex = 18;
@@ -197,7 +172,7 @@
             // lblXP
             // 
             this.lblXP.AutoSize = true;
-            this.lblXP.Location = new System.Drawing.Point(357, 135);
+            this.lblXP.Location = new System.Drawing.Point(662, 39);
             this.lblXP.Name = "lblXP";
             this.lblXP.Size = new System.Drawing.Size(21, 13);
             this.lblXP.TabIndex = 17;
@@ -205,7 +180,7 @@
             // 
             // txtDexterity
             // 
-            this.txtDexterity.Location = new System.Drawing.Point(680, 178);
+            this.txtDexterity.Location = new System.Drawing.Point(542, 99);
             this.txtDexterity.Name = "txtDexterity";
             this.txtDexterity.Size = new System.Drawing.Size(41, 20);
             this.txtDexterity.TabIndex = 28;
@@ -213,7 +188,7 @@
             // lblDexterity
             // 
             this.lblDexterity.AutoSize = true;
-            this.lblDexterity.Location = new System.Drawing.Point(626, 178);
+            this.lblDexterity.Location = new System.Drawing.Point(488, 99);
             this.lblDexterity.Name = "lblDexterity";
             this.lblDexterity.Size = new System.Drawing.Size(48, 13);
             this.lblDexterity.TabIndex = 27;
@@ -221,7 +196,8 @@
             // 
             // txtAttack
             // 
-            this.txtAttack.Location = new System.Drawing.Point(540, 178);
+            this.txtAttack.Enabled = false;
+            this.txtAttack.Location = new System.Drawing.Point(406, 193);
             this.txtAttack.Name = "txtAttack";
             this.txtAttack.Size = new System.Drawing.Size(39, 20);
             this.txtAttack.TabIndex = 26;
@@ -229,7 +205,7 @@
             // lblAttack
             // 
             this.lblAttack.AutoSize = true;
-            this.lblAttack.Location = new System.Drawing.Point(486, 178);
+            this.lblAttack.Location = new System.Drawing.Point(352, 193);
             this.lblAttack.Name = "lblAttack";
             this.lblAttack.Size = new System.Drawing.Size(38, 13);
             this.lblAttack.TabIndex = 25;
@@ -237,7 +213,7 @@
             // 
             // txtWisdome
             // 
-            this.txtWisdome.Location = new System.Drawing.Point(411, 178);
+            this.txtWisdome.Location = new System.Drawing.Point(541, 143);
             this.txtWisdome.Name = "txtWisdome";
             this.txtWisdome.Size = new System.Drawing.Size(42, 20);
             this.txtWisdome.TabIndex = 24;
@@ -245,15 +221,15 @@
             // lblWisdome
             // 
             this.lblWisdome.AutoSize = true;
-            this.lblWisdome.Location = new System.Drawing.Point(354, 181);
+            this.lblWisdome.Location = new System.Drawing.Point(484, 146);
             this.lblWisdome.Name = "lblWisdome";
-            this.lblWisdome.Size = new System.Drawing.Size(51, 13);
+            this.lblWisdome.Size = new System.Drawing.Size(45, 13);
             this.lblWisdome.TabIndex = 23;
-            this.lblWisdome.Text = "Wisdome";
+            this.lblWisdome.Text = "Wisdom";
             // 
             // txtConsititution
             // 
-            this.txtConsititution.Location = new System.Drawing.Point(680, 224);
+            this.txtConsititution.Location = new System.Drawing.Point(680, 99);
             this.txtConsititution.Name = "txtConsititution";
             this.txtConsititution.Size = new System.Drawing.Size(41, 20);
             this.txtConsititution.TabIndex = 34;
@@ -261,7 +237,7 @@
             // lblConsititution
             // 
             this.lblConsititution.AutoSize = true;
-            this.lblConsititution.Location = new System.Drawing.Point(610, 224);
+            this.lblConsititution.Location = new System.Drawing.Point(610, 99);
             this.lblConsititution.Name = "lblConsititution";
             this.lblConsititution.Size = new System.Drawing.Size(64, 13);
             this.lblConsititution.TabIndex = 33;
@@ -269,7 +245,8 @@
             // 
             // txtProficiencyBonus
             // 
-            this.txtProficiencyBonus.Location = new System.Drawing.Point(554, 221);
+            this.txtProficiencyBonus.Enabled = false;
+            this.txtProficiencyBonus.Location = new System.Drawing.Point(544, 193);
             this.txtProficiencyBonus.Name = "txtProficiencyBonus";
             this.txtProficiencyBonus.Size = new System.Drawing.Size(39, 20);
             this.txtProficiencyBonus.TabIndex = 32;
@@ -277,7 +254,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(459, 224);
+            this.label11.Location = new System.Drawing.Point(449, 196);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(92, 13);
             this.label11.TabIndex = 31;
@@ -285,7 +262,7 @@
             // 
             // txtCharisma
             // 
-            this.txtCharisma.Location = new System.Drawing.Point(411, 224);
+            this.txtCharisma.Location = new System.Drawing.Point(679, 146);
             this.txtCharisma.Name = "txtCharisma";
             this.txtCharisma.Size = new System.Drawing.Size(42, 20);
             this.txtCharisma.TabIndex = 30;
@@ -293,7 +270,7 @@
             // lblCharisma
             // 
             this.lblCharisma.AutoSize = true;
-            this.lblCharisma.Location = new System.Drawing.Point(357, 224);
+            this.lblCharisma.Location = new System.Drawing.Point(625, 146);
             this.lblCharisma.Name = "lblCharisma";
             this.lblCharisma.Size = new System.Drawing.Size(50, 13);
             this.lblCharisma.TabIndex = 29;
@@ -301,7 +278,8 @@
             // 
             // txtInitative
             // 
-            this.txtInitative.Location = new System.Drawing.Point(541, 85);
+            this.txtInitative.Enabled = false;
+            this.txtInitative.Location = new System.Drawing.Point(679, 193);
             this.txtInitative.Name = "txtInitative";
             this.txtInitative.Size = new System.Drawing.Size(42, 20);
             this.txtInitative.TabIndex = 36;
@@ -309,7 +287,7 @@
             // lblInitiative
             // 
             this.lblInitiative.AutoSize = true;
-            this.lblInitiative.Location = new System.Drawing.Point(487, 88);
+            this.lblInitiative.Location = new System.Drawing.Point(625, 196);
             this.lblInitiative.Name = "lblInitiative";
             this.lblInitiative.Size = new System.Drawing.Size(46, 13);
             this.lblInitiative.TabIndex = 35;
@@ -321,8 +299,9 @@
             this.btnRandome.Name = "btnRandome";
             this.btnRandome.Size = new System.Drawing.Size(103, 37);
             this.btnRandome.TabIndex = 37;
-            this.btnRandome.Text = "Randome";
+            this.btnRandome.Text = "Random";
             this.btnRandome.UseVisualStyleBackColor = true;
+            this.btnRandome.Click += new System.EventHandler(this.OnClickRandom);
             // 
             // btnRandomeAll
             // 
@@ -330,8 +309,9 @@
             this.btnRandomeAll.Name = "btnRandomeAll";
             this.btnRandomeAll.Size = new System.Drawing.Size(103, 37);
             this.btnRandomeAll.TabIndex = 38;
-            this.btnRandomeAll.Text = "Randome All";
+            this.btnRandomeAll.Text = "Random All";
             this.btnRandomeAll.UseVisualStyleBackColor = true;
+            this.btnRandomeAll.Click += new System.EventHandler(this.OnClickRandomAll);
             // 
             // btnPrint
             // 
@@ -341,6 +321,7 @@
             this.btnPrint.TabIndex = 39;
             this.btnPrint.Text = "Print";
             this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.OnClickPrint);
             // 
             // btnBack
             // 
@@ -350,6 +331,7 @@
             this.btnBack.TabIndex = 40;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.OnClickBack);
             // 
             // btnExit
             // 
@@ -359,12 +341,43 @@
             this.btnExit.TabIndex = 41;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.OnClickExit);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.comboBox1.Location = new System.Drawing.Point(595, 38);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(46, 21);
+            this.comboBox1.TabIndex = 42;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(750, 484);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnPrint);
@@ -384,15 +397,12 @@
             this.Controls.Add(this.lblAttack);
             this.Controls.Add(this.txtWisdome);
             this.Controls.Add(this.lblWisdome);
-            this.Controls.Add(this.txtAgility);
-            this.Controls.Add(this.lblAgility);
             this.Controls.Add(this.txtIntel);
             this.Controls.Add(this.lblIntel);
             this.Controls.Add(this.txtXP);
             this.Controls.Add(this.lblXP);
             this.Controls.Add(this.txtStrenght);
             this.Controls.Add(this.lblStrenght);
-            this.Controls.Add(this.txtLevel);
             this.Controls.Add(this.lblLevel);
             this.Controls.Add(this.txtHealthPoints);
             this.Controls.Add(this.lblHealthpoints);
@@ -419,11 +429,8 @@
         private System.Windows.Forms.Label lblHealthpoints;
         private System.Windows.Forms.TextBox txtHealthPoints;
         private System.Windows.Forms.Label lblLevel;
-        private System.Windows.Forms.TextBox txtLevel;
         private System.Windows.Forms.TextBox txtStrenght;
         private System.Windows.Forms.Label lblStrenght;
-        private System.Windows.Forms.TextBox txtAgility;
-        private System.Windows.Forms.Label lblAgility;
         private System.Windows.Forms.TextBox txtIntel;
         private System.Windows.Forms.Label lblIntel;
         private System.Windows.Forms.TextBox txtXP;
@@ -447,6 +454,7 @@
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

@@ -17,11 +17,35 @@ namespace DDREBOND
             InitializeComponent();
         }
 
-        private void TextBox3_MouseClick(object sender, MouseEventArgs e)
-        {
+     
 
+        private void OnClickRandom(object sender, EventArgs e)
+        {
+            //Changes a single stat
         }
 
-       
+        private void OnClickRandomAll(object sender, EventArgs e)
+        {
+            //Changes all stats
+        }
+
+        private void OnClickPrint(object sender, EventArgs e)
+        {
+            //Opens file explorer to save to a file
+        }
+        //back to previous form
+        private void OnClickBack(object sender, EventArgs e)
+        {
+           
+            HomePage page = new HomePage();
+            page.Show();
+            this.Hide();
+         
+        }
+
+        private void OnClickExit(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
