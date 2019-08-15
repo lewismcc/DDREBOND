@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 //order of stats: strength, dexterity, constitution, inteligence, wisdom, //initiative, //proficiency, charisma
 namespace PlayerData
