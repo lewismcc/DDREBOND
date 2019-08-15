@@ -17,11 +17,6 @@ namespace DDREBOND
             InitializeComponent();
         }
 
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void onClickImg1(object sender, EventArgs e)
         {
 
@@ -49,7 +44,10 @@ namespace DDREBOND
 
         private void onClickNext(object sender, EventArgs e)
         {
+            Form2 page = new Form2();
 
+            page.Show();
+            this.Hide();
         }
     }
 }
